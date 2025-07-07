@@ -1,0 +1,237 @@
+@import "../mixin/mixin";
+
+.header{
+    background-color:var(--color-header);
+    padding:1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+
+    @include responsive-component-padding;
+
+    &--yellow{
+        background-color: var(--color-header);
+    }
+
+    &--white{
+        background-color: #ffff;
+        box-shadow: 0 .7rem 2rem rgba(0,0,0,.2);
+    }
+
+    &--logo{
+        height: 4.5rem;
+        width: 17rem;
+    }
+
+    &--list{
+        width: 50%;
+        padding-left: 7rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+         position: relative;
+        
+        & > *{
+            list-style: none;
+        }
+
+        &:not(:last-child){
+            margin-right: 4rem;
+        }
+
+        &-item{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+           
+            & span{
+                color:var(--color-header-item);
+                font-weight: 500;
+                font-size: 1.72rem;
+                letter-spacing: .07rem;
+                margin-right: .2rem;
+                transition: all .5s;
+
+                &:hover{
+                    color: #ffff; 
+                }
+            }
+       
+            &:hover .header--list-item-hidden{
+                display: block;
+            }
+
+            &:focus .header--list-item-hidden{
+                display: block;
+            }
+
+            &.no-hover-effect:hover span {
+                color: var(--color-header-item); // original color
+            }
+
+            &.no-hover-effect:hover .down-arrow {
+                fill: initial; // reset fill
+            }
+
+        }
+
+
+         @media only screen and (max-width:1027px) {
+            display: none;
+        }
+    }
+
+
+    &--button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+         @media only screen and (max-width:1027px) {
+            display: none;
+        }
+    }
+
+    &__menu{
+        display: none;
+
+        @media only screen and (max-width:1027px) {
+            display: block;
+        }
+
+       
+    }
+
+   
+}
+
+.menu--list-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+   
+           
+    & span{
+        color:var(--color-header-item);
+        font-weight: 500;
+        font-size: 1.72rem;
+        letter-spacing: .07rem;
+        margin-right: .2rem;
+        transition:color .4s;
+
+    }
+
+    &:hover span{
+        color: #fff;
+    }
+
+    &:hover .down-arrow{
+        fill: #fff;
+    }
+       
+    &:hover .menu--list-item-hidden{
+        display: block;
+    }
+
+    &.no-hover-effect:hover span {
+        color: var(--color-header-item); // original color
+    }
+
+    &.no-hover-effect:hover .down-arrow {
+        fill: initial; // reset fill
+    }
+
+    &-hidden {
+        cursor:default;
+        display: none;
+        padding: 3rem;
+        z-index: 1;
+        background-color:#ffff;
+        width: 75rem;
+        // height: 30rem;
+        position: absolute;
+        // top: 6rem;
+        // left: 32rem;
+        top: 100%;
+        left: 0%;
+        
+        // left: 100%;
+        box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+        animation: bounceDown .5s ;
+
+        // transition: all .3s;
+    }
+
+}
+
+@keyframes bounceDown {
+  0% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+.hidden-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor:default;
+
+     &--title{
+        font-weight: 300;
+        letter-spacing: .3rem;
+        font-size: 2rem;
+        color:var(--color-header-item);
+        margin-bottom: 1rem;
+        font-weight: 500;
+     }
+
+     &--description{
+        font-size: 1.5rem;
+        color:var(--color-header-item);
+        margin-bottom: 1.5rem;
+     }
+
+     &--list{
+        display: grid;
+
+        grid-template-rows: repeat(2,50px);
+        grid-template-columns: repeat(2,1fr);
+
+        &-item{
+            color:var(--color-header-item);
+            list-style: none;
+            font-size: 1.75rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition:all .4s;
+
+            &:hover{
+                color: var(--color-header);
+            }
+        }
+     }   
+}
+
+
+.down-arrow{
+    fill: var(--color-header-item);
+    transform: scale(1.2);
+    transition:fill .4s;
+}
+
+.menu__relative{
+    position: relative;
+}
+

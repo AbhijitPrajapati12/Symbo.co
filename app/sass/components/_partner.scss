@@ -1,0 +1,32 @@
+.partner{
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 1.5rem;
+    
+   
+    &__heading{
+        display: block;
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--color-header-item);
+        margin-bottom: 2rem;
+    }
+        
+    &__carousel{
+        display: flex;
+        align-items: center;
+        // position: relative;
+    }
+
+}
+
+@keyframes bounce{
+    from{
+        transform: scale(.3);
+    }
+
+    to{
+        transform: scale(1);
+    }
+}

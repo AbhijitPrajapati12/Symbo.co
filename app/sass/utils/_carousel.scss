@@ -1,0 +1,44 @@
+.carousel{
+    &__arrow{
+        border: none;
+        background-color: transparent;
+    }
+
+   &__figure{
+        width: 100%;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+        
+        &--slider{
+            position: relative;
+            display: flex;
+            width: calc(250px*21);
+            overflow: hidden;
+            animation: scroll 40s linear infinite ;
+
+            &:hover{
+               animation-play-state: paused;
+            }
+        }
+
+        &--img{
+            display: flex; 
+            align-items: center;
+            // height: 5rem;
+            width: 15rem;
+            margin:0 2rem ;
+        }
+
+   
+   }
+}
+
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-130px*21));
+    }
+}

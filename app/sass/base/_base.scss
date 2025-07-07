@@ -1,0 +1,55 @@
+:root {
+  --color-header:rgba(251,210,43,255);
+  --color-button-green:#00C98F;
+  --color-header-item:#013A51;
+  --color-insurtech-background:rgb(4, 69, 83);
+  --color-businesshelp-lightblue:#E1F7EE;
+  --color-review-background:#e1f7ee;
+}
+
+$bp-largest:75em;//1200px =1200px/16px=75em
+$bp-large:68em;//1100px=1100/16px=68em
+$bp-medium:48em;//770
+$bp-small:37em;//600
+$bp-smallest:31.25em;//500
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  height: 100%;
+
+  @media screen and (max-width: 1200px) {
+    font-size: 56.25%; // 9px
+  }
+
+  @media screen and (max-width: 992px) {
+    font-size: 50%; // 8px
+  }
+
+  @media screen and (max-width: 576px) {
+    font-size: 43.75%; // 7px
+  }
+
+
+}
+
+body {
+  // font-family: sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  min-height: 100vh;
+  height: 100%;
+  min-width: 250px;
+  overflow-x: hidden;
+}

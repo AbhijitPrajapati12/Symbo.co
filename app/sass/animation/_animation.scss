@@ -1,0 +1,29 @@
+.scrollup{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s;
+
+    &__visible{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.scaleup{
+    transform: scale(.7);
+    transition: all 1s;
+
+    &__visible{
+        // animation: bouce 1s ease;
+        transform: scale(1);
+    }
+}
+
+// @keyframes bounce{
+//     from{
+//         transform: scale(1.5);
+//     }
+//     to{
+//         transform: scale(1);
+//     }
+// }

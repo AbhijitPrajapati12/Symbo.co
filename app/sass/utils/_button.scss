@@ -1,0 +1,47 @@
+.btn{
+    border-radius: 100px;
+    padding: 1.3rem 2.2rem;
+    font-weight: 700;
+    // margin: 0rem .6rem;
+    margin-right:1.5rem ;
+    border: none;
+    cursor: pointer;
+    color: #eee;
+    transition: all .3s;
+    font-size: 1.4rem;
+
+     @media only screen and (max-width:372px) {
+        width: 17rem;
+     }
+
+  
+    &:hover{
+        transform: scale(0.85);
+    }
+
+    &--green{
+        background-color: var(--color-button-green);
+    }
+
+    &--transparent{
+        color: var(--color-header-item);
+        border: 1px solid var(--color-header-item);
+        background-color: transparent;
+    }
+}
+
+.pagebtn{
+    font-size: 2rem;
+    color: #ffff;
+    padding: 1rem;
+    border-radius: 50%;
+    border: none;
+    margin-right: 2rem;
+    background-color:transparent;
+
+    &--active{
+        background-color: var(--color-button-green);
+    }
+   
+}
+

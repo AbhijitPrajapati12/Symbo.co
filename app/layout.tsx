@@ -1,0 +1,23 @@
+import './style/style.css'
+import HomePage from './pages/HomePage';
+import { Work_Sans } from 'next/font/google'
+ 
+const work_sans = Work_Sans({
+  style:['normal'],
+  weight:['400','500','600','700','800'],
+});
+
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en" className={work_sans.className}>
+      <body>
+        <HomePage/>
+      </body>
+    </html>
+  );
+}
