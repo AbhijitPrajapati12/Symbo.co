@@ -3,7 +3,6 @@ import StartingAd from "../components/StartingAd";
 import Benefits from "../components/Benefits";
 import BusinessHelp from "../components/BusinessHelp";
 import DeliveryPartner from "../components/DeliveryPartner";
-// import Carousel from "../components/Carousel";
 import InsurTech from "../components/InsurTech";
 import Reviews from "../components/Reviews";
 import CaseStudy from "../components/CaseStudy";
@@ -21,7 +20,7 @@ const HomePage = () => {
         <InsurTech />
         <Reviews />
         <CaseStudy />
-        <DragToTop />
+        {/* <DragToTop /> */}
       </main>
     </>
   );

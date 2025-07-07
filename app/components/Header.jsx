@@ -1,7 +1,5 @@
 "use client";
 import { useState, useEffect } from "react";
-import Image from "next/image";
-import symbologo from "../img/symbo-logo.svg";
 import Button from "../utils/Button";
 import { Menu, Close } from "../Icons/icon";
 import HeaderMenu from "../utils/HeaderMenu";
@@ -29,7 +27,11 @@ const Header = () => {
     <header
       className={`header ${scrolled ? "header--white" : "header--yellow"}`}
     >
-      <Image src={symbologo} className="header--logo" alt="Symbo Logo" />
+      <img
+        src="https://www.symbo.co/wp-content/webp-express/webp-images/uploads/2022/05/SYMBO-LOGO-PNG-01-1536x407.png.webp"
+        className="header--logo"
+        alt="Symbo Logo"
+      />
       <div className="header--list">
         <HeaderMenu
           isScrolled={scrolled}

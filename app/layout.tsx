@@ -16,6 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={work_sans.className}>
       <body>
+        <div id="modal"></div>
         <HomePage/>
       </body>
     </html>
