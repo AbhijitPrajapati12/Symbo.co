@@ -1,17 +1,17 @@
 :root {
-  --color-header:rgba(251,210,43,255);
-  --color-button-green:#00C98F;
-  --color-header-item:#013A51;
-  --color-insurtech-background:rgb(4, 69, 83);
-  --color-businesshelp-lightblue:#E1F7EE;
-  --color-review-background:#e1f7ee;
+  --color-header: rgba(251, 210, 43, 255);
+  --color-button-green: #00C98F;
+  --color-header-item: #013A51;
+  --color-insurtech-background: rgb(4, 69, 83);
+  --color-businesshelp-lightblue: #E1F7EE;
+  --color-review-background: #e1f7ee;
 }
 
-$bp-largest:75em;//1200px =1200px/16px=75em
-$bp-large:68em;//1100px=1100/16px=68em
-$bp-medium:48em;//770
-$bp-small:37em;//600
-$bp-smallest:31.25em;//500
+$bp-largest: 75em; //1200px =1200px/16px=75em
+$bp-large: 68em; //1100px=1100/16px=68em
+$bp-medium: 48em; //770
+$bp-small: 37em; //600
+$bp-smallest: 31.25em; //500
 
 * {
   margin: 0;
@@ -49,7 +49,6 @@ body {
   font-weight: 400;
   line-height: 1.6;
   min-height: 100vh;
-  height: 100%;
   min-width: 250px;
   overflow-x: hidden;
 }

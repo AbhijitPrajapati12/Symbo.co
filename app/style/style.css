@@ -1,10 +1,10 @@
 :root {
-  --color-header:rgba(251,210,43,255);
-  --color-button-green:#00C98F;
-  --color-header-item:#013A51;
-  --color-insurtech-background:rgb(4, 69, 83);
-  --color-businesshelp-lightblue:#E1F7EE;
-  --color-review-background:#e1f7ee;
+  --color-header: rgba(251, 210, 43, 255);
+  --color-button-green: #00C98F;
+  --color-header-item: #013A51;
+  --color-insurtech-background: rgb(4, 69, 83);
+  --color-businesshelp-lightblue: #E1F7EE;
+  --color-review-background: #e1f7ee;
 }
 
 * {
@@ -43,7 +43,6 @@ body {
   font-weight: 400;
   line-height: 1.6;
   min-height: 100vh;
-  height: 100%;
   min-width: 250px;
   overflow-x: hidden;
 }
@@ -264,6 +263,7 @@ body {
   display: flex;
   justify-content: space-between;
   overflow: hidden;
+  white-space: wrap;
   padding-right: 5rem;
   padding-left: 5rem;
 }
@@ -296,6 +296,7 @@ body {
   min-height: 37rem;
   position: relative;
   overflow: hidden;
+  overflow: hidden;
 }
 @media only screen and (max-width: 770px) {
   .heading-details {
@@ -305,10 +306,9 @@ body {
 }
 
 .heading {
-  overflow: hidden;
   flex-direction: column;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 @media only screen and (max-width: 770px) {
   .heading {
@@ -894,20 +894,16 @@ body {
 }
 
 .result-modal {
-  position: fixed;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 80%;
-  height: 70vh;
   border: none;
   border-radius: 8px;
-  padding: 2rem;
-  background-color: #d7fcf8;
-}
-
-.result-modal[open] {
-  animation: slide-in-from-top 0.35s ease-out;
+  padding: 20%;
+  background: transparent;
+  overflow: visible;
 }
 
 .result-modal::backdrop {

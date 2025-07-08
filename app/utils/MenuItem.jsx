@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { SmallUpArrow, SmallDownArrow } from "../Icons/icon";
+import { SmallUpArrow, SmallDownArrow } from "../Icons/Icon";
 
 const MenuItem = ({ title, options }) => {
   const [menuSelected, setMenuSelected] = useState(false);
@@ -16,9 +16,8 @@ const MenuItem = ({ title, options }) => {
         {title} {menuSelected ? <SmallUpArrow /> : <SmallDownArrow />}
       </div>
       <div
-        className={`shortmenu__options ${
-          menuSelected ? "shortmenu--active" : undefined
-        }`}
+        className={`shortmenu__options ${menuSelected ? "shortmenu--active" : undefined
+          }`}
       >
         <ul className="shortmenu__list">
           {options.map((item, index) => (

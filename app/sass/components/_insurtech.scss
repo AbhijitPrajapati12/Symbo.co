@@ -1,22 +1,22 @@
-@import '../mixin/mixin';
+@use '../mixin/mixin';
 
-.insurtech{
-    padding:10rem 6.5rem 5rem 6.5rem;
+.insurtech {
+    padding: 10rem 6.5rem 5rem 6.5rem;
     background-color: var(--color-insurtech-background);
     color: #ffff;
 
 
-    @include responsive-component-padding;
+    @include mixin.responsive-component-padding;
 
     @media only screen and (max-width:770px) {
         padding-top: 5rem;
     }
 
-    &__pagenums{
+    &__pagenums {
         margin-bottom: 2rem;
     }
 
-    &__heading{
+    &__heading {
         width: 50%;
         margin-bottom: 5rem;
 
@@ -24,7 +24,7 @@
             width: 70%;
         }
 
-        &-header{
+        &-header {
             font-size: 3rem;
             line-height: 3rem;
             font-weight: 600;
@@ -38,16 +38,16 @@
     //     scroll-behavior: smooth;
     // }
 
-    &__page{
+    &__page {
         display: flex;
-   
+
         // scrollbar-width: none;
 
         @media only screen and (max-width:770px) {
             flex-direction: column;
         }
 
-        &--details{
+        &--details {
             display: flex;
             flex-direction: column;
             margin-top: 5rem;
@@ -57,17 +57,17 @@
                 margin-bottom: 3rem;
             }
 
-            h3{
+            h3 {
                 font-size: 1.75rem;
                 margin-bottom: 2rem;
             }
 
-            p{
+            p {
                 font-size: 1.5rem;
             }
         }
 
-        &--img{
+        &--img {
             display: flex;
             justify-content: center;
             flex: 1;
@@ -75,10 +75,10 @@
     }
 }
 
-.insurtechimage{
+.insurtechimage {
     width: 50%;
 
-    @media only screen and (max-width:770px){
+    @media only screen and (max-width:770px) {
         width: 80%;
     }
 }

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { DownArrow } from "../Icons/icon";
+import { DownArrow } from "../Icons/Icon";
 
 const DragToTop = () => {
   const [scrolled, setScrolled] = useState(false);

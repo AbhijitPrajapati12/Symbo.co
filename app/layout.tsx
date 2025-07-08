@@ -5,11 +5,12 @@ import { Work_Sans } from 'next/font/google'
 const work_sans = Work_Sans({
   style:['normal'],
   weight:['400','500','600','700','800'],
+  subsets: ['latin'],
 });
 
 
 export default function RootLayout({
-  children,
+  
 }: Readonly<{
   children: React.ReactNode;
 }>) {
