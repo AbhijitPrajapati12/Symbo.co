@@ -1,112 +1,117 @@
 @use "../mixin/mixin";
 
 .startingad__1 {
-    // min-height: 60vh;
-    margin-top: 6.5rem;
-    background-color: var(--color-header);
-    // padding:4rem 5rem;
-    padding-top: 3rem;
-    padding-left: 6rem;
-    display: flex;
-    justify-content: space-between;
-    overflow: hidden;
-    white-space: wrap;
+  // min-height: 60vh;
+  margin-top: 6.5rem;
+  background-color: var(--color-header);
+  // padding:4rem 5rem;
+  padding-top: 3rem;
+  padding-left: 6rem;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  white-space: wrap;
 
-    @include mixin.responsive-component-padding;
+  @include mixin.responsive-component-padding;
 
-    @media only screen and (max-width:770px) {
-        flex-direction: column;
-    }
-
+  @media only screen and (max-width: 770px) {
+    flex-direction: column;
+  }
 }
 
 .heading-details {
-    width: 50%;
-    min-height: 37rem;
-    position: relative;
-    overflow: hidden;
-    // display: flex;
-    // justify-content: space-evenly;
+  width: 50%;
+  min-height: 37rem;
+  position: relative;
+  overflow: hidden;
+  // display: flex;
+  // justify-content: space-evenly;
 
-    overflow: hidden;
+  overflow: hidden;
 
-    @media only screen and (max-width:770px) {
-        width: 100%;
-        min-height: 0;
-
-    }
+  @media only screen and (max-width: 770px) {
+    width: 100%;
+    min-height: 0;
+    min-width: 400px;
+  }
 }
 
 .heading {
-    // overflow: hidden;
-    flex-direction: column;
-    display: flex;
-    // margin-right: 13rem;
-    justify-content: space-between;
+  // overflow: hidden;
+  flex-direction: column;
+  display: flex;
+  // margin-right: 13rem;
+  justify-content: space-between;
 
-    @media only screen and (max-width:770px) {
-        // margin-bottom: 0rem;
-        width: 90%;
-        overflow-x: hidden;
+  @media only screen and (max-width: 770px) {
+    // margin-bottom: 0rem;
+    width: 90%;
+    overflow-x: hidden;
 
+    & > * {
+      margin-bottom: 2rem;
+    }
+  }
 
-        &>* {
-            margin-bottom: 2rem;
+  &__header {
+    color: var(--color-header-item);
+    line-height: 5rem;
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
 
-        }
+    & span {
+      color: var(--color-button-green);
+      display: inline-block;
     }
 
-    &__header {
-        color: var(--color-header-item);
-        line-height: 5rem;
-        font-size: 4rem;
-        font-weight: 600;
-        margin-bottom: 1rem;
-
-        & span {
-            color: var(--color-button-green);
-            display: inline-block;
-        }
-
-        @media only screen and (max-width:770px) {}
+    @media only screen and (max-width: 770px) {
     }
+  }
 
-    &__description {
-        margin-bottom: 2rem;
+  &__description {
+    margin-bottom: 2rem;
+  }
+
+  &__buttons {
+    @media only screen and (max-width: 372px) {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
     }
-
-    &__buttons {
-
-
-        @media only screen and (max-width:372px) {
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-        }
-    }
+  }
 }
 
 @keyframes slideIn {
-    0% {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
 
-    80% {
-        transform: translateX(10px);
-        opacity: 1;
-    }
+  80% {
+    transform: translateX(10px);
+    opacity: 1;
+  }
 
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .text-slide {
-    animation: slideIn 0.6s ease-in-out;
+  animation: slideIn 0.6s ease-in-out;
 }
 
 .dynamic-text {
-    display: inline-block;
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.ghost-word {
+  visibility: hidden;
+  position: absolute;
+  white-space: nowrap;
+  pointer-events: none;
 }

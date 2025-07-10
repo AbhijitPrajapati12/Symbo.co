@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { DownArrow } from "../Icons/Icon";
+import { SmallUpArrow } from "./Icon";
 
 const DragToTop = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -15,19 +15,32 @@ const DragToTop = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const moveToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <>
-      {size.height > 700 && (
+      {scrolled && (
         <div
           className="dragbutton"
+          onClick={moveToTop}
           style={{
-            height: "20px",
-            width: "20px",
+            position: "fixed",
+            right: "5rem",
+            bottom: "5rem",
+            height: "4rem",
+            width: "4rem",
             backgroundColor: "#00C98F",
             padding: "5px",
+            zIndex: "10",
+            color: "white",
+            alignContent: "center",
+            textAlign: "center",
           }}
         >
-          <DownArrow />
+          <SmallUpArrow />
         </div>
       )}
     </>

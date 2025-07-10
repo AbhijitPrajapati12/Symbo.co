@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 export const DownArrow = () => (
   <svg
@@ -103,7 +103,7 @@ export const CloseArrow = () => (
     viewBox="0 0 24 24"
     width="2em"
     height="2em"
-    cursor='pointer'
+    cursor="pointer"
     fill="#ffff"
   >
     <path
@@ -112,6 +112,3 @@ export const CloseArrow = () => (
     ></path>
   </svg>
 );
-
-
-

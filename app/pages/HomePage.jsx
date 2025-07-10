@@ -20,7 +20,7 @@ const HomePage = () => {
         <InsurTech />
         <Reviews />
         <CaseStudy />
-        {/* <DragToTop /> */}
+        <DragToTop />
       </main>
     </>
   );

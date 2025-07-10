@@ -26,12 +26,6 @@ const StartingAd = () => {
   return (
     <>
       <VideoPortal ref={dialog} />
-      {/* <dialog ref={dialog} className="result-modal">
-        <p>Hello</p>
-        <form method="dialog">
-          <button>Close</button>
-        </form>
-      </dialog> */}
       <section className="startingad__1">
         <div className="heading-details">
           <div className="heading">
@@ -39,6 +33,7 @@ const StartingAd = () => {
               Embedded <br /> Insurance for your <br />
               <div className="dynamic-text" key={index}>
                 <span className="text text-slide">{businessNames[index]}</span>
+                <span className="ghost-word">YourLongestPossibleWord</span>
               </div>{" "}
               Business
             </div>

@@ -1,10 +1,11 @@
-import { DownArrow } from "../Icons/Icon";
+import { DownArrow } from "../components/Icon";
 
 const HeaderMenu = ({ title, description, listitems, isScrolled }) => {
   return (
     <li
-      className={`menu--list-item ${isScrolled ? "no-hover-effect" : undefined
-        }`}
+      className={`menu--list-item ${
+        isScrolled ? "no-hover-effect" : undefined
+      }`}
     >
       <span>{title}</span>
       <DownArrow className="down-arrow" />

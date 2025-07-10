@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import Button from "../utils/Button";
-import { Menu, Close } from "../Icons/Icon";
+import { Menu, Close } from "./Icon";
 import HeaderMenu from "../utils/HeaderMenu";
 import { companyList, resourcesList, industryList } from "../utils/consts";
 import ShortMenu from "./ShortMenu";
@@ -42,8 +42,9 @@ const Header = () => {
           listitems={industryList}
         />
         <li
-          className={`menu--list-item ${scrolled ? "no-hover-effect" : undefined
-            }`}
+          className={`menu--list-item ${
+            scrolled ? "no-hover-effect" : undefined
+          }`}
         >
           <span>Platform</span>
         </li>

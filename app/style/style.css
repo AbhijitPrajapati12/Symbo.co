@@ -302,6 +302,7 @@ body {
   .heading-details {
     width: 100%;
     min-height: 0;
+    min-width: 400px;
   }
 }
 
@@ -360,7 +361,16 @@ body {
 }
 
 .dynamic-text {
+  position: relative;
   display: inline-block;
+  white-space: nowrap;
+}
+
+.ghost-word {
+  visibility: hidden;
+  position: absolute;
+  white-space: nowrap;
+  pointer-events: none;
 }
 
 .benefits {

@@ -4,7 +4,7 @@ import { useState } from "react";
 import ScrollUpAnimation from "../animation-utils/ScrollUpAnimation";
 import ScaleUpAnimation from "../animation-utils/ScaleUpAnimation";
 import { partnerImg } from "../utils/consts";
-import { FrontArrow, BackArrow } from "../Icons/Icon";
+import { FrontArrow, BackArrow } from "./Icon";
 
 const DeliveryPartner = () => {
   const [index, setIndex] = useState(0);

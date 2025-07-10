@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { BackArrow, FrontArrow } from "../Icons/Icon";
+import { BackArrow, FrontArrow } from "./Icon";
 import { reviews } from "../utils/consts";
 
 const Reviews = () => {
@@ -74,10 +74,11 @@ const Reviews = () => {
         <div className="reviews__track">
           {reviews.map((review, i) => (
             <div
-              className={`review ${i === index
+              className={`review ${
+                i === index
                   ? `review--active review--${direction}`
                   : "review--inactive"
-                }`}
+              }`}
               key={i}
             >
               <div className="review__container">
@@ -126,8 +127,9 @@ const Reviews = () => {
       <div className="dotindicator">
         {reviews.map((item, i) => (
           <div
-            className={`dotindicator__list ${i === index ? "dotindicator--active" : undefined
-              }`}
+            className={`dotindicator__list ${
+              i === index ? "dotindicator--active" : undefined
+            }`}
             onClick={() => handleDotIndicator(i)}
             key={i}
           ></div>
