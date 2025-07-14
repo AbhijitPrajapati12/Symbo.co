@@ -623,7 +623,7 @@ body {
 .review__img {
   width: 50%;
 }
-@media only screen and (max-width: 1010) {
+@media only screen and (max-width: 1010px) {
   .review__img {
     display: none;
   }
@@ -632,7 +632,7 @@ body {
   width: 50%;
   margin: auto 5rem;
 }
-@media only screen and (max-width: 1010) {
+@media only screen and (max-width: 1010px) {
   .review__content {
     width: 100%;
     margin: 5rem 2rem;

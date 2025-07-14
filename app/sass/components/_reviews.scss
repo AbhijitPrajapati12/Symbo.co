@@ -52,7 +52,7 @@
   &__img {
     width: 50%;
 
-    @media only screen and (max-width: 1010) {
+    @media only screen and (max-width: 1010px) {
       display: none;
     }
   }
@@ -63,7 +63,7 @@
 
     // @include responsive-component-padding;
 
-    @media only screen and (max-width: 1010) {
+    @media only screen and (max-width: 1010px) {
       width: 100%;
       margin: 5rem 2rem;
     }
