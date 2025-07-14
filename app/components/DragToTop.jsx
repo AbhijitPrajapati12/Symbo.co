@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { SmallUpArrow } from "./Icon";
+import { UpArrow } from "./Icon";
 
 const DragToTop = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -39,7 +39,7 @@ const DragToTop = () => {
             textAlign: "center",
           }}
         >
-          <SmallUpArrow />
+          <UpArrow />
         </div>
       )}
     </>

@@ -113,7 +113,7 @@ export const reviews = [
     name: "Indranil Chakravarty",
     profilepic:
       "https://www.symbo.co/wp-content/webp-express/webp-images/uploads/2022/03/lenskart-150x150.png.webp",
-    designation: "CBO, Lenscart",
+    designation: "CBO, Lenskart",
     comment:
       "Customer happiness is the core of everything we do at Lenskart. Working with Symbo, we brought first of its kind insurance solution in eyewear industry. Product, process and technology innovation done by Symbo and Lenskart team has helped us improve customer experience significantly. Together we have been able to deliver on our goals of highest attachment rate, seamless claims journey and most importantly customer happiness.”",
     achievements: [

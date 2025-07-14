@@ -1,5 +1,3 @@
-"use client";
-
 export const DownArrow = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -110,5 +108,17 @@ export const CloseArrow = () => (
       fill="currentColor"
       d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12z"
     ></path>
+  </svg>
+);
+
+export const UpArrow = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="#ffff"
+    width="3em"
+    height="3em"
+  >
+    <path d="M11.9999 10.8284L7.0502 15.7782L5.63599 14.364L11.9999 8L18.3639 14.364L16.9497 15.7782L11.9999 10.8284Z"></path>
   </svg>
 );
