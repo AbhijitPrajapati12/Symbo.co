@@ -1,7 +1,8 @@
-@use '../mixin/mixin';
+@use "../mixin/mixin";
 
 .section-review {
   background-color: var(--color-review-background);
+  overflow: hidden;
 }
 
 .reviews {
@@ -51,7 +52,7 @@
   &__img {
     width: 50%;
 
-    @media only screen and (max-width:1010) {
+    @media only screen and (max-width: 1010) {
       display: none;
     }
   }
@@ -62,7 +63,7 @@
 
     // @include responsive-component-padding;
 
-    @media only screen and (max-width:1010) {
+    @media only screen and (max-width: 1010) {
       width: 100%;
       margin: 5rem 2rem;
     }
@@ -99,7 +100,7 @@
     display: flex;
     margin: 3rem 1rem;
     padding-bottom: 3rem;
-    border-bottom: 1px solid rgba(0, 0, 0, .5);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
     color: var(--color-header-item);
     align-items: center;
 
@@ -117,7 +118,6 @@
         font-size: 1.5rem;
       }
     }
-
   }
 
   &__achievements {
@@ -156,7 +156,6 @@
   }
 }
 
-
 .achievement__item {
   display: inline-block;
   width: 25%;
@@ -167,7 +166,7 @@
     display: flex;
     align-items: center;
     color: inherit;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
 
     p {
       font-weight: 700;
@@ -199,8 +198,8 @@
 
   &__list {
     cursor: pointer;
-    height: .7rem;
-    width: .7rem;
+    height: 0.7rem;
+    width: 0.7rem;
     border-radius: 50%;
     background-color: rgb(162, 173, 176);
 

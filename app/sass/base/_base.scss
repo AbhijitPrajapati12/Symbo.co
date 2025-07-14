@@ -1,9 +1,9 @@
 :root {
   --color-header: rgba(251, 210, 43, 255);
-  --color-button-green: #00C98F;
-  --color-header-item: #013A51;
+  --color-button-green: #00c98f;
+  --color-header-item: #013a51;
   --color-insurtech-background: rgb(4, 69, 83);
-  --color-businesshelp-lightblue: #E1F7EE;
+  --color-businesshelp-lightblue: #e1f7ee;
   --color-review-background: #e1f7ee;
 }
 
@@ -40,8 +40,6 @@ html {
   @media screen and (max-width: 576px) {
     font-size: 43.75%; // 7px
   }
-
-
 }
 
 body {
@@ -50,5 +48,4 @@ body {
   line-height: 1.6;
   min-height: 100vh;
   min-width: 250px;
-  overflow-x: hidden;
 }

@@ -5,7 +5,6 @@ import { SmallUpArrow } from "./Icon";
 
 const DragToTop = () => {
   const [scrolled, setScrolled] = useState(false);
-  const [menuSelected, setMenuSelected] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {

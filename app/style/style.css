@@ -1,9 +1,9 @@
 :root {
   --color-header: rgba(251, 210, 43, 255);
-  --color-button-green: #00C98F;
-  --color-header-item: #013A51;
+  --color-button-green: #00c98f;
+  --color-header-item: #013a51;
   --color-insurtech-background: rgb(4, 69, 83);
-  --color-businesshelp-lightblue: #E1F7EE;
+  --color-businesshelp-lightblue: #e1f7ee;
   --color-review-background: #e1f7ee;
 }
 
@@ -44,7 +44,6 @@ body {
   line-height: 1.6;
   min-height: 100vh;
   min-width: 250px;
-  overflow-x: hidden;
 }
 
 .header {
@@ -302,7 +301,6 @@ body {
   .heading-details {
     width: 100%;
     min-height: 0;
-    min-width: 400px;
   }
 }
 
@@ -313,8 +311,7 @@ body {
 }
 @media only screen and (max-width: 770px) {
   .heading {
-    width: 90%;
-    overflow-x: hidden;
+    width: 100%;
   }
   .heading > * {
     margin-bottom: 2rem;
@@ -361,16 +358,12 @@ body {
 }
 
 .dynamic-text {
-  position: relative;
   display: inline-block;
-  white-space: nowrap;
 }
-
-.ghost-word {
-  visibility: hidden;
-  position: absolute;
-  white-space: nowrap;
-  pointer-events: none;
+@media screen and (max-width: 480px) {
+  .dynamic-text {
+    display: block;
+  }
 }
 
 .benefits {
@@ -587,6 +580,7 @@ body {
 
 .section-review {
   background-color: var(--color-review-background);
+  overflow: hidden;
 }
 
 .reviews {

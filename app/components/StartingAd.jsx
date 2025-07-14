@@ -32,8 +32,9 @@ const StartingAd = () => {
             <div className="heading__header">
               Embedded <br /> Insurance for your <br />
               <div className="dynamic-text" key={index}>
-                <span className="text text-slide">{businessNames[index]}</span>
-                <span className="ghost-word">YourLongestPossibleWord</span>
+                <span className={`text text-slide`}>
+                  {businessNames[index]}
+                </span>
               </div>{" "}
               Business
             </div>
