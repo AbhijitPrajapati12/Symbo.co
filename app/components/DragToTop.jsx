@@ -35,8 +35,9 @@ const DragToTop = () => {
             padding: "5px",
             zIndex: "10",
             color: "white",
-            alignContent: "center",
-            textAlign: "center",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
           }}
         >
           <UpArrow />
